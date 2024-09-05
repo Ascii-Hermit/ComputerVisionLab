@@ -8,7 +8,7 @@ imread() helps us read an image
 imshow() displays an image in a window
 imwrite() writes an image into the file directory
 waitKey() waits till a key is pressed
-destroyAllWindows() closes all the creates windows
+destroyAllWindows() closes all the creatded windows
 '''
 
 # The function cv2.imread() is used to read an image.

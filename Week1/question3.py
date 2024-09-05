@@ -30,20 +30,17 @@ import cv2 as cv
 
 img = cv.imread('flower.png')
 
-if img is None:
-    print("Error: Could not open or find the image.")
-else:
-    # Define the coordinates of the pixel you want to extract (x, y)
-    x = 100
-    y = 150
+# Define the coordinates of the pixel you want to extract (x, y)
+x = 100
+y = 150
 
-    # Extract RGB values at the specified pixel
-    # remember the syntax
-    (b, g, r) = img[y, x]
+# Extract RGB values at the specified pixel
+# remember the syntax
+(b, g, r) = img[y, x]
 
-    # Print RGB values
-    print(f"RGB values at pixel ({x}, {y}):")
-    print(f"Red: {r}")
-    print(f"Green: {g}")
-    print(f"Blue: {b}")
+# Print RGB values
+print(f"RGB values at pixel ({x}, {y}):")
+print(f"Red: {r}")
+print(f"Green: {g}")
+print(f"Blue: {b}")
 

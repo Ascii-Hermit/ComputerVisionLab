@@ -7,11 +7,11 @@ if img is None:
 else:
     angle = 45
 
-    #get first 2 elements
+    # get first 2 elements
     height, width = img.shape[:2]
 
     #standard functions for rotating
-    rotation_matrix = cv.getRotationMatrix2D((width/2, height/2), angle, 1)
+    rotation_matrix = cv.getRotationMatrix2D((width/2, height/2), angle, 1) # center, angle, scaling
     rotated_img = cv.warpAffine(img, rotation_matrix, (width, height))
 
     cv.imshow('Original Image', img)
