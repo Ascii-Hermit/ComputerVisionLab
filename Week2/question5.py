@@ -3,7 +3,7 @@
 import cv2 as cv
 import numpy as np
 
-img = cv.imread('images/cat.jpg', 0)
+img = cv.imread('Week2/images/cat.jpg', 0)
 
 low_threshold = 100
 high_threshold = 150

@@ -3,7 +3,7 @@
 import cv2 as cv
 import numpy as np
 
-img_path = 'images/cat.jpg'
+img_path = 'Week2/images/cat.jpg'
 img = cv.imread(img_path, 0)
 
 # Define the (Rmin, Smin) minimum and (Rmax, Smax) maximum pixel values for the original and stretched image
@@ -20,7 +20,6 @@ cv.imshow('Contrast Stretched Image', stretched_img)
 cv.waitKey(0)
 cv.destroyAllWindows()
 
-output_path = 'images/contrast_stretched_cat.jpg'
-cv.imwrite(output_path, stretched_img)
+cv.imwrite('images/contrast_stretched_cat.jpg', stretched_img)
 
 

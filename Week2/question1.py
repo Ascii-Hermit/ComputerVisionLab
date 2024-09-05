@@ -2,8 +2,8 @@
 
 import cv2 as cv
 
-img = cv.imread('images/cat.jpg', 0)
-negative_img = abs(255 - img) # subtracts from the whole matrix
+img = cv.imread('Week2/images/cat.jpg', 0)
+negative_img = (255 - img) # subtracts from the whole matrix
 
 cv.imshow('Normal', img)
 cv.imshow('Negative', negative_img)

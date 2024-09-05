@@ -1,7 +1,9 @@
+# implement log transform
+
 import cv2 as cv
 import numpy as np
 
-img = cv.imread('images/cat.jpg', 0)
+img = cv.imread('Week2/images/cat.jpg', 0)
 
 img_float = img.astype(np.float32) # optional for accuracy
 

@@ -3,18 +3,20 @@
 import cv2 as cv
 import numpy as np
 
-gamma = 2
+gamma =0.5
 scaling_constant = 1
 
-img = cv.imread('images/cat.jpg', 0)
+img = cv.imread('Week2/images/cat.jpg', 0)
 
 img_float = img.astype(np.float32) # optional for accuracy
 
 #REMEMBER TO NORMALIZE THE IMG_FLOAT VALUES FROM 0-1
 gamma_img = scaling_constant * np.power(img_float / 255.0, gamma)
 
+gamma_img = gamma_img*255 # scale it back to normal
+
 # change the number and clip irrelevant values
-gamma_img = np.clip(gamma_img * 255, 0, 255).astype(np.uint8)
+gamma_img = np.clip(gamma_img , 0, 255).astype(np.uint8)
 
 cv.imshow('Normal', img)
 cv.imshow('Gamma Transform', gamma_img)
